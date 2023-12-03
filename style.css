@@ -1,13 +1,73 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: linear-gradient(to right, #ffafbd, #ffc3a0);
-    display: flex;
+  
     justify-content: center;
-    align-items: center;
-    color: white;
+    
+    height: 100vh;
+    background: linear-gradient(to right, #ffafbd, #f5ccb4);
+    display: flex;
+    color: rgb(253, 254, 234);
     font-family: Arial, sans-serif;
-    font-size: 24px;
+   
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  }
+  .myimg{
+    width: 250px; 
+  height: 250px; 
+  object-fit: cover; 
+  border-radius: 50%; 
+  border-style: ridge;
+  clip-path: circle(50% at 50% 50%);
+  position: relative;
+  margin-left: 35%;
+  }
+  .resume{
+    width: 60%;
+    font-size: 30px;
+    
   }
   
+  header{
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  .resume section p {
+    display: none;
+  }
+  .resume section ul {
+    display: none;
+  }
+  
+.resume section:hover ul,
+.resume section:hover p {
+  
+  display: block;
+}
+
+.resume section{
+  cursor: pointer;
+  margin-bottom: 8%;
+ 
+}
+ul{
+  background-color: rgb(255, 243, 252);
+  border-radius: 15px;
+  border: 5px solid rgb(110, 65, 65);
+  color: rgb(92, 2, 2);
+  height: 50%;
+}
+
+.intro{
+  background-color: rgb(255, 243, 252);
+  border-radius: 15px;
+  border: 5px solid rgb(110, 65, 65);
+  color: rgb(92, 2, 2);
+  height: 50%;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.row p {
+  margin: auto;
+}
